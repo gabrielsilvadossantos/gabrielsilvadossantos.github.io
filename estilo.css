@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    background-color: black;
+    color: white;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#logo{
+    width: 110px;
+    position: absolute;
+    top: 5px;
+    margin-left: 1%;
+}
+#menu{
+    float: right;
+    margin-right: 1%;
+    list-style: none;
+    margin-top: 0%;
+}
+li{
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover{
+    background-color: rgb(16, 134, 6);
+    color: white;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;}
+#fundo{
+    background: url("img/growth-4518406_1920.jpg");
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+}
+#titulo1{
+    color: black;
+    padding-top: 20%;
+    font-size: 55px;
+    line-height: 0.6;
+    
+}
+#titulo2{
+    color: black;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 40px;
+}
+#botao{
+    color: black;
+    border: rgb(20, 100, 13, 0.705) solid;
+    padding: 10px 15px 10px 15px;
+}
+#meis, #feito{
+    background-color: rgba(180, 206, 180, 0.418);
+
+}
+.imagens{
+    width: 40%;
+    height: 40%;
+}
+.imgsobre{
+width: 40%;
+height: 30%;
+}
+section{
+    padding: 20px;
+    float: left;
+}
+.coluna{
+    float: right;
+    padding: 0 5%;
+    position:initial;
+    width: 40%;
+}
+.alinhamento{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+footer {
+    background-color: rgba(20, 100, 13, 0.705);
+    float: left;
+    width: 100%;
+    height: 30%;
+    color: white;
+}
+.rodape{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 50%,;
+}
+
+@media all and (max-width: 768px){
+    #menu{
+        visibility: hidden;
+    }
+    .alinhamento, .centralizado, .coluna{
+        display: block;   
+        width: 90%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #smartlogo {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo {
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+
+}
